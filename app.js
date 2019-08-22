@@ -13,7 +13,7 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 
 global.dbHandel = require('./database/dbHandel');
-global.db = mongoose.connect("mongodb://localhost:27017/nodedb");
+// global.db = mongoose.connect("mongodb://localhost:27017/nodedb");
 var app = express();
 app.use(session({ 
 	secret: 'secret',
@@ -32,7 +32,7 @@ app.set('view engine', 'html');
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(multer());
+// app.use(multer());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
