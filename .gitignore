@@ -1,2 +1,2 @@
-# dependencies
-/node_modules
+# 过滤
+!test/node_modules/
